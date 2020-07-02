@@ -2,5 +2,10 @@
 # Write one line of Python that takes this list a and makes a new list that has only the even
 # elements of this list in it.
 
-a=list(map(int,list(input("Enter list elements : ").split())))
-print(list(filter(lambda x: x%2==0,a)))
+import random
+
+a=random.sample(range(50),random.randint(1,10))
+print("List : {}".format(a))
+
+# a=list(map(int,list(input("Enter list elements : ").split())))
+print("Even numbers list : {}".format(list(filter(lambda x: x%2==0,a))))
